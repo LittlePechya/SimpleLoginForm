@@ -4,8 +4,8 @@ var password = document.forms["form"]["password"];
 var email_error = document.getElementById("email-error");
 var pass_error = document.getElementById("pass-error");
 
-email.addEventListener("textInput", email_Verify);
-password.addEventListener("textInput", pass_Verify);
+email.addEventListener("input", email_Verify);
+password.addEventListener("input", pass_Verify);
 
 function validated() {
   if (email.value.length < 9) {
